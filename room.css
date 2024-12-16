@@ -1,0 +1,80 @@
+/* Rooms Section */
+.rooms {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.room-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.room-card {
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 280px;
+    overflow: hidden;
+    text-align: center;
+    position: relative; /* Ensures heart icon is positioned relative to the room card */
+}
+
+.room-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.room-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.room-description {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+.room-card .cta-btn {
+    margin-top: 15px;
+}
+
+/* Heart Icon Styling */
+.like-icon {
+    font-size: 30px; /* Adjust the size of the heart */
+    color: #ffffff !important; /* Force the heart symbol to be white */
+    background-color: #e82574; /* Pink background */
+    border-radius: 50%; /* Circular background */
+    width: 40px; /* Size of the heart symbol */
+    height: 40px; /* Size of the heart symbol */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10; /* Ensures the icon appears on top of the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+}
+
+/* Force default icon colors for <i> tags */
+.like-icon i {
+    color: #ffffff !important; /* Ensure the heart is white */
+}
+
+/* No hover effect */
+.like-icon:hover {
+    background-color: #e82574; /* Keep the same pink background */
+    transform: scale(1); /* No scaling effect */
+}
+
+/* Optional active state when the heart is clicked (like state) */
+.like-icon.liked {
+    background-color: #e82574; /* Keep pink background when liked */
+    color: #ffffff !important; /* Heart symbol remains white when liked */
+}

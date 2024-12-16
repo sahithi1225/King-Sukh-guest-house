@@ -1,0 +1,95 @@
+/* Updated CSS for the new HTML structure */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+:root {
+    --primary-color: #e82574;
+    --primary-color-dark: #bc1c5c;
+    --text-dark: #0c0a09;
+    --text-light: #78716c;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact .section-title {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(232, 37, 116, 0.5);
+}
+
+textarea.input-field {
+    resize: none;
+    height: 120px;
+}
+
+.cta-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+@media (max-width: 600px) {
+    .contact .container {
+        padding: 20px;
+    }
+
+    .contact .section-title {
+        font-size: 24px;
+    }
+
+    .cta-btn {
+        font-size: 14px;
+    }
+}
